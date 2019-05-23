@@ -2,7 +2,7 @@ import React from 'react';
 import bonsai from './../../assets/bonsai.jpg';
 import seedoflife from './../../assets/seedoflife.gif';
 import downArrow from './../../assets/downArrow.png';
-import sortDown from './../../assets/sortDown.png';
+
 
 function Header() {
   return(
