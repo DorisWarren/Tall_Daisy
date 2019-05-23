@@ -1,7 +1,9 @@
 .Product {
-  border: 1px solid #eee;
   margin: 1rem 0;
   padding: 1rem;
+
+
+
 }
 
 @media (min-width: 800px) {
@@ -18,7 +20,12 @@
 .Product-price {
   margin-bottom: 1rem;
 }
-
+div{
+  display:block;
+}
+.App-products{
+text-align:center;
+}
 .Product-buy-button {
   display: inline-block;
   margin: 0 0 1rem 0;

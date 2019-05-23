@@ -4,6 +4,10 @@
   max-width: 800px;
   padding-top: 2rem;
   text-align: center;
+  justify-content: center;
+    padding-right:60px;
+
+
 }
 
 .Cart-total-cost {

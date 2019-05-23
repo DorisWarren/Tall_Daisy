@@ -19,6 +19,8 @@ function FeaturedCollections () {
           justify-content: center;
           top: 30px;
           margin: 50px;
+          border-bottom: 1px solid #eee;
+
       }
       .hr {
         display: block;
@@ -29,15 +31,30 @@ function FeaturedCollections () {
         padding: 0;
       }
       .plant-selection{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        justify-content: space-evenly;
+        display: flex
+
+
       }
+    .plant-name  {
+      margin:0px,60px, 0px;
+        justify-content: space-between;
+        display: flex;
+        text-align:center;
+        margin-left: 70px;
+        margin-right: 70px;
+
+      }
+
 
 
       `}</style>
 
       <header>
         <div>
+
             <h3 className="collection">FEATURED COLLECTION</h3>
         </div>
       </header>
@@ -47,6 +64,11 @@ function FeaturedCollections () {
           <img style={{ height: '75vh', width: '30vw', position:'relative',}} className="selection"src={cacti}/>
           <img style={{ height: '75vh', width: '30vw', position:'relative',}} className="selection"src={lilbonsai}/>
           <img style={{ height: '75vh', width: '30vw', position:'relative',}} className="selection"src={figtree}/>
+        </div>
+        <div className="plant-name">
+          <p>CACTI</p>
+          <p>LIL BONSAI</p>
+          <p>FIGTREE</p>
         </div>
       </section>
 

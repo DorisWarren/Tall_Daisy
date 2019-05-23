@@ -7,7 +7,7 @@ import CheckoutForm from './components/CheckoutForm/CheckoutForm';
 import Header from './components/header/Header';
 import FeaturedCollections from './components/collections/FeaturedCollections';
 import { Switch, Route } from 'react-router-dom';
-
+import './App.css';
 
 
 
@@ -45,6 +45,7 @@ export default function App() {
       <Switch>
 
       </Switch>
+
       <main className="App-shop">
         <div className="App-products">
           {items.map(item => (
@@ -56,6 +57,7 @@ export default function App() {
             />
           ))}
         </div>
+        <div className="Shopping-cart">
         <Cart itemsInCart={itemsInCart} totalCost={totalCost} />
         {itemsInCart.length > 0 && (
           <StripeProvider apiKey={process.env.stripe}>
@@ -64,7 +66,9 @@ export default function App() {
             </Elements>
           </StripeProvider>
         )}
+      </div>
       </main>
+
 
     </div>
   );
